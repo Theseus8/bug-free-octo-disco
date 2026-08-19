@@ -1,0 +1,10 @@
+#!/bin/bash
+echo $@
+commitFile=$(<$1)
+commitPrefixRegex='^(feat|fix):\ \[.*\]\ ?[a-zA-Z]+$'
+if [[ "$commitFile" =~ $commitPrefixRegex ]]; then
+    exit 0
+else
+    echo "Format wrong"
+    exit 1
+fi

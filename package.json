@@ -1,0 +1,20 @@
+{
+  "name": "bug-free-octo-disco",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Theseus8/bug-free-octo-disco#readme",
+  "bugs": {
+    "url": "https://github.com/Theseus8/bug-free-octo-disco/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Theseus8/bug-free-octo-disco.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup:git-hooks": "mv commit-msg ./.git/hooks/",
+    "postinstall": "npm run setup:git-hooks"
+  }
+}
